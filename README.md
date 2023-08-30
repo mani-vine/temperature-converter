@@ -2,9 +2,9 @@
 
 This is a simple React application that allows users to convert temperatures between Celsius and Fahrenheit. Users can enter a temperature value, select the unit (Celsius or Fahrenheit), and then convert it.
 
-![Initial view](https://github.com/mani-vine/temperature-converter/assets/124549879/6105745d-0bda-4f27-a42a-9a10f4cfc42c)
-<img width="442" alt="image" src="https://github.com/mani-vine/temperature-converter/assets/124549879/b6bcd15d-06cf-4167-a9b9-49e47d091fac">
-<img width="442" alt="image" src="https://github.com/mani-vine/temperature-converter/assets/124549879/9a2b07e2-bd6c-4c76-b342-69520b9ce192">
+<img width="536" alt="image" src="https://github.com/mani-vine/temperature-converter/assets/124549879/fef4c59a-7812-4971-8d5e-e2f6269acf4e">
+<img width="536" alt="image" src="https://github.com/mani-vine/temperature-converter/assets/124549879/19b78555-c302-411d-a894-6809cca3f146">
+<img width="536" alt="image" src="https://github.com/mani-vine/temperature-converter/assets/124549879/7902e5a1-4039-4408-8a29-8501b5450b0c">
 
 
 
