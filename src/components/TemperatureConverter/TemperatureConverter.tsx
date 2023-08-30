@@ -43,44 +43,46 @@ const TemperatureConverter: React.FC = () => {
   const unit = selectedUnit === 'Celsius' ? '°C' : '°F';
 
   return (
-    <form className={styles.container} onSubmit={handleConvertTemperature}>
-      <div className={styles.unitContainer}>
-        <label>
+    <>
+      <form className={styles.container} onSubmit={handleConvertTemperature}>
+        <div className={styles.unitContainer}>
+          <label>
+            <input
+              type='radio'
+              value='Celsius'
+              checked={selectedUnit === 'Celsius'}
+              onChange={() => handleUnitChange('Celsius')}
+            />
+            Celsius
+          </label>
+          <label>
+            <input
+              type='radio'
+              value='Fahrenheit'
+              checked={selectedUnit === 'Fahrenheit'}
+              onChange={() => handleUnitChange('Fahrenheit')}
+            />
+            Fahrenheit
+          </label>
+        </div>
+        <div className={styles.inputContainer}>
+          <label className={styles.unitLabel}>{label}:</label>
           <input
-            type='radio'
-            value='Celsius'
-            checked={selectedUnit === 'Celsius'}
-            onChange={() => handleUnitChange('Celsius')}
+            data-testid='input-field'
+            type='number'
+            value={inputValue}
+            onChange={handleInputChange}
+            required
           />
-          Celsius
-        </label>
-        <label>
-          <input
-            type='radio'
-            value='Fahrenheit'
-            checked={selectedUnit === 'Fahrenheit'}
-            onChange={() => handleUnitChange('Fahrenheit')}
-          />
-          Fahrenheit
-        </label>
-      </div>
-      <div className={styles.inputContainer}>
-        <label className={styles.unitLabel}>{label}:</label>
-        <input
-          data-testid='input-field'
-          type='number'
-          value={inputValue}
-          onChange={handleInputChange}
-          required
-        />
-        {unit}
-      </div>
-      <div className={styles.actionContainer}>
-        <button type='submit'>Convert</button>
-        <button className='secondary' onClick={handleSwap}>
-          Swap
-        </button>
-      </div>
+          {unit}
+        </div>
+        <div className={styles.actionContainer}>
+          <button type='submit'>Convert</button>
+          <button className='secondary' onClick={handleSwap}>
+            Swap
+          </button>
+        </div>
+      </form>
       {convertedValue && (
         <p
           className={`${styles.result} ${
@@ -90,7 +92,7 @@ const TemperatureConverter: React.FC = () => {
           Converted Temperature: {convertedValue}
         </p>
       )}
-    </form>
+    </>
   );
 };
 

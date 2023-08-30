@@ -7,18 +7,6 @@
     margin-bottom: 10px;
   }
 
-  .result {
-    margin-top: 20px;
-
-    &.hot {
-      color: red;
-    }
-
-    &.cold {
-      color: blue;
-    }
-  }
-
   .inputContainer {
     display: flex;
     align-items: center;
@@ -44,5 +32,17 @@
     align-items: flex-end;
     gap: 10px;
     margin-left: 5px;
+  }
+}
+
+.result {
+  margin-top: 20px;
+
+  &.hot {
+    color: red;
+  }
+
+  &.cold {
+    color: blue;
   }
 }
