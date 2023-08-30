@@ -1,0 +1,48 @@
+.container {
+  display: inline-block;
+
+  .unitContainer {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+
+  .result {
+    margin-top: 20px;
+
+    &.hot {
+      color: red;
+    }
+
+    &.cold {
+      color: blue;
+    }
+  }
+
+  .inputContainer {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 5px;
+    gap: 5px;
+
+    label {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 80px;
+    }
+
+    input {
+      margin-left: 5px;
+      padding: 4px;
+      width: 100px;
+    }
+  }
+
+  .actionContainer {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    margin-left: 5px;
+  }
+}

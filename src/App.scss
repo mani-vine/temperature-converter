@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+}
+
+button {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  background-color: #007bff;
+  border-radius: 6px;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+
+  &.secondary {
+    background-color: #6c757d;
+  }
+  &.secondary:hover {
+    background-color: #5c636a;
+  }
+}
